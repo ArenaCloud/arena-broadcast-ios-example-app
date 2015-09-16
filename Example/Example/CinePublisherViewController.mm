@@ -20,7 +20,7 @@
 {
     //-- A/V setup
     self.orientationLocked = NO; // set to YES to turn off rotation support in UI
-    self.videoSize = CGSizeMake(720, 1280);
+    self.videoSize = CGSizeMake(720, 720*720/1280);
     self.framesPerSecond = 30;
     self.videoBitRate = 1500000;
     self.sampleRateInHz = 44100; // either 44100 or 22050
@@ -32,7 +32,7 @@
     //-- cine.io setup
 
     // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SAMPLE-cineio-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSLog(@"settings: %@", settings);
 

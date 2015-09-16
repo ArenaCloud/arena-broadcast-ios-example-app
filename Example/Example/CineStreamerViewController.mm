@@ -26,7 +26,7 @@
     //-- cine.io setup
     
     // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SAMPLE-cineio-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSLog(@"settings: %@", settings);
     

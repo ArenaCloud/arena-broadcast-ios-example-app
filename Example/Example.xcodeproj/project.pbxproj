@@ -26,7 +26,6 @@
 		00C5E195193FB3AC009DA7B9 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E194193FB3AC009DA7B9 /* ExampleTests.m */; };
 		00C5E19F193FB74B009DA7B9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E19E193FB74B009DA7B9 /* Podfile */; };
 		00C5E1A1193FB761009DA7B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A0193FB761009DA7B9 /* README.md */; };
-		00C5E1A3193FB8C2009DA7B9 /* cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A2193FB8C2009DA7B9 /* cineio-settings.plist */; };
 		00C5E1A5193FB9EC009DA7B9 /* SAMPLE-cineio-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A4193FB9EC009DA7B9 /* SAMPLE-cineio-settings.plist */; };
 		00D226F419529E700081E1CD /* CineTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D226F319529E700081E1CD /* CineTabBarController.m */; };
 		00D226F619529F750081E1CD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D226F519529F750081E1CD /* MediaPlayer.framework */; };
@@ -69,7 +68,6 @@
 		00C5E194193FB3AC009DA7B9 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		00C5E19E193FB74B009DA7B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		00C5E1A0193FB761009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		00C5E1A2193FB8C2009DA7B9 /* cineio-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cineio-settings.plist"; sourceTree = "<group>"; };
 		00C5E1A4193FB9EC009DA7B9 /* SAMPLE-cineio-settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SAMPLE-cineio-settings.plist"; sourceTree = "<group>"; };
 		00D226F219529E700081E1CD /* CineTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineTabBarController.h; sourceTree = "<group>"; };
 		00D226F319529E700081E1CD /* CineTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineTabBarController.m; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				00C5E172193FB3AC009DA7B9 /* main.m */,
 				00C5E174193FB3AC009DA7B9 /* Example-Prefix.pch */,
 				00C5E1A4193FB9EC009DA7B9 /* SAMPLE-cineio-settings.plist */,
-				00C5E1A2193FB8C2009DA7B9 /* cineio-settings.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,7 +249,7 @@
 				ORGANIZATIONNAME = cine.io;
 				TargetAttributes = {
 					00C5E162193FB3AC009DA7B9 = {
-						DevelopmentTeam = G5RU2HL4SN;
+						DevelopmentTeam = 634AFE5Y68;
 					};
 					00C5E186193FB3AC009DA7B9 = {
 						TestTargetID = 00C5E162193FB3AC009DA7B9;
@@ -289,7 +286,6 @@
 				00C5E17D193FB3AC009DA7B9 /* Main_iPad.storyboard in Resources */,
 				00C5E182193FB3AC009DA7B9 /* Images.xcassets in Resources */,
 				00C5E17A193FB3AC009DA7B9 /* Main_iPhone.storyboard in Resources */,
-				00C5E1A3193FB8C2009DA7B9 /* cineio-settings.plist in Resources */,
 				00C5E171193FB3AC009DA7B9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -487,6 +483,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoopmedia.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -504,6 +502,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoopmedia.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

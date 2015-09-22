@@ -32,15 +32,18 @@
     //-- cine.io setup
 
     // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SAMPLE-cineio-settings" ofType:@"plist"];
-    NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
-    NSLog(@"settings: %@", settings);
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SAMPLE-cineio-settings" ofType:@"plist"];
+//    NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
+//    NSLog(@"settings: %@", settings);
 
+    NSString* roomId = @"00003";
+    NSString* password = @"";
+    
     // create a new CineClient to fetch our stream information
     CineClient *cine = [[CineClient alloc] init];
-    cine.projectSecretKey = settings[@"CINE_IO_PROJECT_SECRET_KEY"];
+    cine.projectSecretKey = /*settings[@"CINE_IO_PROJECT_SECRET_KEY"]*/@"SECRET_KEY";
     [self updateStatus:@"Configuring stream using cine.io ..."];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"] withCompletionHandler:^(NSError *error, CineStream *stream) {
+    [cine getStream:/*settings[@"CINE_IO_STREAM_ID"]*/[[roomId stringByAppendingString:@":"] stringByAppendingString:password] withCompletionHandler:^(NSError *error, CineStream *stream) {
         if (error) {
             [self updateStatus:@"ERROR: couldn't get stream information from cine.io"];
         } else {

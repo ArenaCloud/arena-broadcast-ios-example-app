@@ -1,12 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.0'
+platform :ios, ‘8.0’
 
 # Comment out this line if working on cineio-ios
-pod 'cineio-broadcast-ios', '~> 0.7'
+#pod 'cineio-broadcast-ios', '~> 0.7'
 
 # Uncomment this line if working on cineio-ios
-#pod 'cineio-broadcast-ios', path: '/Users/jeffrey/dev/cine-dev/cineio-broadcast-ios'
+pod 'cineio-broadcast-ios', path: '/Users/WilliamShi/Desktop/HoopMediaStreamer/cineio-broadcast-ios'
+#pod 'cineio-broadcast-ios', :git => 'https://github.com/HupuInc/cineio-broadcast-ios.git'
 
 # Uncomment this line if working on VideoCore
-#pod 'VideoCore', path: '/Users/jeffrey/dev/cine-dev/VideoCore'
+pod 'VideoCore', path: '/Users/WilliamShi/Desktop/HoopMediaStreamer/VideoCore'
+
+pod 'SocketRocket', '~> 0.3.1-beta2'
+pod 'socket.IO', '~> 0.5.2'
+pod 'ASIHTTPRequest', '~> 1.8.2'

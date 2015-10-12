@@ -1,19 +1,19 @@
 //
-//  CineStreamerViewController.m
+//  StreamerViewController.m
 //  Example
 //
 //  Created by Jeffrey Wescott on 6/18/14.
-//  Copyright (c) 2014 cine.io. All rights reserved.
+//  Copyright (c) 2014 ArenaCloud.com. All rights reserved.
 //
 
-#import "CineStreamerViewController.h"
-#import <cineio/CineIO.h>
+#import "StreamerViewController.h"
+#import <ArenaCloud/broadcast/ArenaCloudBroadcast.h>
 
-@interface CineStreamerViewController ()
+@interface StreamerViewController ()
 
 @end
 
-@implementation CineStreamerViewController
+@implementation StreamerViewController
 
 @synthesize playButton;
 
@@ -23,19 +23,19 @@
     playButton.hidden = NO;
     playButton.enabled = YES;
     
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
     
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSLog(@"settings: %@", settings);
     
-    // create a new CineClient to fetch our stream information
-    CineClient *cine = [[CineClient alloc] init];
-    cine.projectPublicKey = settings[@"CINE_IO_PROJECT_PUBLIC_KEY"];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"]
-           byTicket:settings[@"CINE_IO_STREAM_TICKET"]
-        withCompletionHandler:^(NSError *error, CineStream *stream) {
+    // create a new ACBRClient to fetch our stream information
+    ACBRClient *client = [[ACBRClient alloc] init];
+    client.projectPublicKey = settings[@"PROJECT_PUBLIC_KEY"];
+    [client getStream:settings[@"STREAM_ID"]
+             byTicket:settings[@"STREAM_TICKET"]
+        withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
                                                             message:@"Couldn't get stream settings from ArenaCloud.com."

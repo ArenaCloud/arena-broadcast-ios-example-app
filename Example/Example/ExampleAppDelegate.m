@@ -1,14 +1,14 @@
 //
-//  CineAppDelegate.m
+//  ExampleAppDelegate.m
 //  Example
 //
 //  Created by Jeffrey Wescott on 6/4/14.
-//  Copyright (c) 2014 cine.io. All rights reserved.
+//  Copyright (c) 2014 ArenaCloud.com. All rights reserved.
 //
 
-#import "CineAppDelegate.h"
+#import "ExampleAppDelegate.h"
 
-@implementation CineAppDelegate
+@implementation ExampleAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

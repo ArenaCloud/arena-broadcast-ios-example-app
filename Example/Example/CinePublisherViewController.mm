@@ -44,7 +44,7 @@
          byPassword:settings[@"CINE_IO_STREAM_PASSWORD"]
         withCompletionHandler:^(NSError *error, CineStream *stream) {
         if (error) {
-            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud"];
+            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud.com"];
         } else {
             self.publishUrl = [stream publishUrl];
             self.publishStreamName = [stream publishStreamName];

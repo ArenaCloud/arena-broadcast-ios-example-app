@@ -38,7 +38,7 @@
         withCompletionHandler:^(NSError *error, CineStream *stream) {
         if (error) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
-                                                            message:@"Couldn't get stream settings from cine.io."
+                                                            message:@"Couldn't get stream settings from ArenaCloud.com."
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];

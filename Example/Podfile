@@ -9,7 +9,7 @@ pod 'arenacloud-broadcast-ios', :git => 'https://github.com/ArenaCloud/arenaclou
 pod 'VideoCore', :git => 'https://github.com/ArenaCloud/VideoCore.git', :branch => 'master'
 
 # Uncomment this line if working on arenacloud-broadcast-ios
-#pod 'cineio-broadcast-ios', :path => '../../arenacloud-broadcast-ios'
+#pod 'arenacloud-broadcast-ios', :path => '../../arenacloud-broadcast-ios'
 
 # Uncomment this line if working on VideoCore
 #pod 'VideoCore', :path => '../../VideoCore'

@@ -1,20 +1,20 @@
 //
-//  CinePublisherViewController.m
+//  PublisherViewController.m
 //  Example
 //
 //  Created by Jeffrey Wescott on 6/4/14.
-//  Copyright (c) 2014 cine.io. All rights reserved.
+//  Copyright (c) 2014 ArenaCloud.com. All rights reserved.
 //
 
-#import "CinePublisherViewController.h"
-#import <cineio/CineIO.h>
+#import "PublisherViewController.h"
+#import <ArenaCloud/broadcast/ArenaCloudBroadcast.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface CinePublisherViewController ()
+@interface PublisherViewController ()
 
 @end
 
-@implementation CinePublisherViewController
+@implementation PublisherViewController
 
 - (void)viewDidLoad
 {
@@ -29,22 +29,22 @@
     // will use them in its viewDidLoad method
     [super viewDidLoad];
 
-    //-- cine.io setup
+    //-- ArenaCloud.com setup
 
-    // read our cine.io configuration from a plist bundle
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cineio-settings" ofType:@"plist"];
+    // read our ArenaCloud.com configuration from a plist bundle
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"broadcast-settings" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSLog(@"settings: %@", settings);
 
-    // create a new CineClient to fetch our stream information
-    CineClient *cine = [[CineClient alloc] init];
-    cine.projectPublicKey = settings[@"CINE_IO_PROJECT_PUBLIC_KEY"];
-    [self updateStatus:@"Configuring stream using cine.io ..."];
-    [cine getStream:settings[@"CINE_IO_STREAM_ID"]
-         byPassword:settings[@"CINE_IO_STREAM_PASSWORD"]
-        withCompletionHandler:^(NSError *error, CineStream *stream) {
+    // create a new ACBRClient to fetch our stream information
+    ACBRClient *client = [[ACBRClient alloc] init];
+    client.projectPublicKey = settings[@"PROJECT_PUBLIC_KEY"];
+    [self updateStatus:@"Configuring stream using ArenaCloud.com..."];
+    [client getStream:settings[@"STREAM_ID"]
+           byPassword:settings[@"STREAM_PASSWORD"]
+        withCompletionHandler:^(NSError *error, ACBRStream *stream) {
         if (error) {
-            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud"];
+            [self updateStatus:@"ERROR: couldn't get stream information from ArenaCloud.com"];
         } else {
             self.publishUrl = [stream publishUrl];
             self.publishStreamName = [stream publishStreamName];
@@ -59,10 +59,10 @@
 - (void)toggleStreaming:(id)sender
 {
     switch(self.streamState) {
-        case CineStreamStateNone:
-        case CineStreamStatePreviewStarted:
-        case CineStreamStateEnded:
-        case CineStreamStateError:
+        case ACBRStreamStateNone:
+        case ACBRStreamStatePreviewStarted:
+        case ACBRStreamStateEnded:
+        case ACBRStreamStateError:
             [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
             break;
         default:

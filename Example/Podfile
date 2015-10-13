@@ -8,8 +8,14 @@ pod 'arenacloud-broadcast-ios', :git => 'https://github.com/ArenaCloud/arenaclou
 # Comment out this line if working on VideoCore
 pod 'VideoCore', :git => 'https://github.com/ArenaCloud/VideoCore.git', :branch => 'master'
 
+# Comment out this line if working on ijkplayer
+pod 'ijkplayer', :git => 'https://github.com/ArenaCloud/ijkplayer.git', :tag => '1.1.0'
+
 # Uncomment this line if working on arenacloud-broadcast-ios
 #pod 'arenacloud-broadcast-ios', :path => '../../arenacloud-broadcast-ios'
 
 # Uncomment this line if working on VideoCore
 #pod 'VideoCore', :path => '../../VideoCore'
+
+# Uncomment this line if working on ijkplayer
+#pod 'ijkplayer', :path => '../../ijkplayer'

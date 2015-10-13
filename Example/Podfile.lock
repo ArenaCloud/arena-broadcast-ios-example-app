@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - arenacloud-broadcast-ios (0.7.2):
+  - arenacloud-broadcast-ios (0.8.0):
     - AFNetworking (~> 2.5)
     - VideoCore (~> 0.3)
   - boost (1.51.0):
@@ -57,10 +57,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  arenacloud-broadcast-ios: 176c8226727937b2ec1b5dcaf052e64b07447bc5
+  arenacloud-broadcast-ios: f9f1454dbf26b8c079c7878a1d0e5f8efb9d13b1
   boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
   glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
   UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
   VideoCore: ee91bb8b71919ac7a1cbc752b72272fc53a0567f
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

@@ -26,9 +26,10 @@
 		00C5E195193FB3AC009DA7B9 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5E194193FB3AC009DA7B9 /* ExampleTests.m */; };
 		00C5E19F193FB74B009DA7B9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E19E193FB74B009DA7B9 /* Podfile */; };
 		00C5E1A1193FB761009DA7B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A0193FB761009DA7B9 /* README.md */; };
-		00C5E1A5193FB9EC009DA7B9 /* broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A4193FB9EC009DA7B9 /* broadcast-settings.plist */; };
+		00C5E1A5193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A4193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist */; };
 		00D226F419529E700081E1CD /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D226F319529E700081E1CD /* RootTabBarController.m */; };
 		00D226F619529F750081E1CD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D226F519529F750081E1CD /* MediaPlayer.framework */; };
+		78E385BB1BD1ABAA00ABAE2C /* broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78E385BA1BD1ABAA00ABAE2C /* broadcast-settings.plist */; settings = {ASSET_TAGS = (); }; };
 		F1B189ABA9E24A2C8C3F0B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D51065605F54399B601FB91 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,11 +69,12 @@
 		00C5E194193FB3AC009DA7B9 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ExampleTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		00C5E19E193FB74B009DA7B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		00C5E1A0193FB761009DA7B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = README.md; path = ../README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
-		00C5E1A4193FB9EC009DA7B9 /* broadcast-settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "broadcast-settings.plist"; sourceTree = "<group>"; };
+		00C5E1A4193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SAMPLE-broadcast-settings.plist"; sourceTree = "<group>"; };
 		00D226F219529E700081E1CD /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RootTabBarController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		00D226F319529E700081E1CD /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RootTabBarController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		00D226F519529F750081E1CD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4927B8D16676F5F0C04C82E7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		78E385BA1BD1ABAA00ABAE2C /* broadcast-settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "broadcast-settings.plist"; sourceTree = "<group>"; };
 		8450E88C13C78FC240DC1BCB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8D51065605F54399B601FB91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,8 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				00C5E16E193FB3AC009DA7B9 /* Example-Info.plist */,
-				00C5E1A4193FB9EC009DA7B9 /* broadcast-settings.plist */,
 				00C5E16F193FB3AC009DA7B9 /* InfoPlist.strings */,
+				00C5E1A4193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist */,
+				78E385BA1BD1ABAA00ABAE2C /* broadcast-settings.plist */,
 				00C5E172193FB3AC009DA7B9 /* main.m */,
 				00C5E174193FB3AC009DA7B9 /* Example-Prefix.pch */,
 			);
@@ -283,7 +286,8 @@
 			files = (
 				00C5E1A1193FB761009DA7B9 /* README.md in Resources */,
 				00C5E19F193FB74B009DA7B9 /* Podfile in Resources */,
-				00C5E1A5193FB9EC009DA7B9 /* broadcast-settings.plist in Resources */,
+				00C5E1A5193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist in Resources */,
+				78E385BB1BD1ABAA00ABAE2C /* broadcast-settings.plist in Resources */,
 				00C5E17D193FB3AC009DA7B9 /* Main_iPad.storyboard in Resources */,
 				00C5E182193FB3AC009DA7B9 /* Images.xcassets in Resources */,
 				00C5E17A193FB3AC009DA7B9 /* Main_iPhone.storyboard in Resources */,

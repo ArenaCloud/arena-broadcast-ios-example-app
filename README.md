@@ -6,8 +6,7 @@ Sample iOS application to demonstrate broadcasting and playback using the
 ## How to Use
 
 1. Clone the repository.
-2. Create a broadcast-settings.plist file based on the SAMPLE-broadcast-
-   settings.plist file. You'll need to create a (free) account at
+2. Update broadcast-settings.plist file with correct private and public keys. You'll need to create a (free) account at
    [ArenaCloud.com][ArenaCloud].
 3. Change into the `Example` directory: `cd Example`
 4. Install the necessary CocoaPods: `pod install`

@@ -14,6 +14,8 @@
 {
     // Override point for customization after application launch.
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    
+    [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     return YES;
 }
 

@@ -52,6 +52,9 @@
             // once we've fully-configured our properties, we can enable the
             // UI controls on our view
             [self enableControls];
+            
+            // take a screen shot, for example
+            [self takeScreenShot];
         }
     }];
 }
@@ -72,6 +75,25 @@
     
     // start / stop the actual stream
     [super toggleStreaming:sender];
+}
+
+- (void)didGotScreenShot:(CGImageRef)image
+{
+    [super didGotScreenShot:image];
+
+    // save screenshot
+    if (image != nil)
+    {
+        UIImage *uiImage = [UIImage imageWithCGImage:image];
+        
+        NSData* imageData = UIImagePNGRepresentation(uiImage);
+        NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString* documentsDirectory = [paths objectAtIndex:0];
+        // Now we get the full path to the file
+        NSString* fullPathToFile = [documentsDirectory stringByAppendingPathComponent:@"ScreenShot.png"];
+        // and then we write it out
+        [imageData writeToFile:fullPathToFile atomically:NO];
+    }
 }
 
 @end

@@ -29,7 +29,7 @@
 		00C5E1A5193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C5E1A4193FB9EC009DA7B9 /* SAMPLE-broadcast-settings.plist */; };
 		00D226F419529E700081E1CD /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D226F319529E700081E1CD /* RootTabBarController.m */; };
 		00D226F619529F750081E1CD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D226F519529F750081E1CD /* MediaPlayer.framework */; };
-		78E385BB1BD1ABAA00ABAE2C /* broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78E385BA1BD1ABAA00ABAE2C /* broadcast-settings.plist */; settings = {ASSET_TAGS = (); }; };
+		78E385BB1BD1ABAA00ABAE2C /* broadcast-settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78E385BA1BD1ABAA00ABAE2C /* broadcast-settings.plist */; };
 		F1B189ABA9E24A2C8C3F0B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D51065605F54399B601FB91 /* libPods.a */; };
 /* End PBXBuildFile section */
 

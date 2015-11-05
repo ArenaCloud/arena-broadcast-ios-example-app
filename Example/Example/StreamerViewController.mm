@@ -47,6 +47,22 @@
             self.stream = stream;
         }
     }];
+#if 0
+    [client getStreamRecordings:settings[@"STREAM_ID"]
+             byTicket:settings[@"STREAM_TICKET"]
+          withCompletionHandler:^(NSError *error, NSArray *recordings) {
+        if (error) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network error"
+                                                            message:@"Couldn't get stream recordings from ArenaCloud.com."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else {
+            self.recordings = recordings;
+        }
+    }];
+#endif
 }
 
 - (IBAction)playButtonPressed:(id)sender
@@ -55,6 +71,9 @@
     playButton.hidden = YES;
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     [self startStreaming];
+#if 0
+    [self startRecordingStreaming];
+#endif
 }
 
 /*- (void)finishStreaming

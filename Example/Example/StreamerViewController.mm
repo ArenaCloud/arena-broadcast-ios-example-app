@@ -76,12 +76,14 @@
 #endif
 }
 
-/*- (void)finishStreaming
+- (void)finishStreaming
 {
+    [super finishStreaming];
+
     [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
     playButton.hidden = NO;
     playButton.enabled = YES;
-}*/
+}
 
 - (BOOL)shouldAutorotate {
     return YES;

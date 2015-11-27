@@ -3,13 +3,13 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 # Comment out this line if working on arenacloud-broadcast-ios
-pod 'arenacloud-broadcast-ios', :git => 'https://github.com/ArenaCloud/arenacloud-broadcast-ios.git', :tag => '0.9.7'
+pod 'arenacloud-broadcast-ios', :git => 'https://github.com/ArenaCloud/arenacloud-broadcast-ios.git', :tag => '0.9.8'
 
 # Comment out this line if working on VideoCore
-pod 'VideoCore', :git => 'https://github.com/ArenaCloud/VideoCore.git', :tag => '0.3.2-m4'
+pod 'VideoCore', :git => 'https://github.com/ArenaCloud/VideoCore.git', :tag => '0.3.2-m5'
 
 # Comment out this line if working on ijkplayer
-pod 'ijkplayer', :git => 'https://github.com/ArenaCloud/ijkplayer.git', :tag => 'v1.3.1'
+pod 'ijkplayer', :git => 'https://github.com/ArenaCloud/ijkplayer.git', :tag => 'v1.3.2'
 
 # Uncomment this line if working on arenacloud-broadcast-ios
 #pod 'arenacloud-broadcast-ios', :path => '../../arenacloud-broadcast-ios'
